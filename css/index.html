@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>appunti css</title>
+  </head>
+  <body>
+  <div class="app">
+    <h1>appunti css</h1>
+    <p>con css si intende un linguaggio che permette di modificare i valori della macchina che ne va a leggere il contenuto dando cosi possibilità di modificarne style e aspetto dello stesso.<br> le necessita al fine della sua funzione sono poche, basta inserire un link direttamente nel head del file html per permetere il suo funzionamento in tale file, basta quindi inserire le coordinate del file e cosi il file css sarà letto con il file html dalla macchina.</p>
+  </div>
+  <section id="selettori" >
+    <div>
+      <h2>selettori</h2>
+      <p>per attribuire una funzione ad un oggetto basta indicarla nel file css usando gli appositi selettori.</p>
+      <ul>
+        <li><strong>*=</strong>usando l'asterisco si selezionano tutte le TAG del file html </li>
+        <li><strong>TAG=</strong> inserendo una specifica TAG si selezioneranno tutte le TAG di quel tipo</li>
+        <li><strong>.classe=</strong> con il punto si seleziona una classe specifica indicata subito dopo il punto </li>
+        <li><strong>#id=</strong> con il cancelletto si seleziona una id specifica indicata subito dopo il cancelleto </li>
+        <li><strong>TAG.class=</strong> in questo modo si seleziona una tag che abbia anche una specifica classe </li>
+        <li><strong>TAG,.class=</strong>la virgola permette di chiamare più oggetti assieme permettendo di selezionare piu oggetti anche indipendenti l'uno dal altro. </li>
+        <li><strong>TAG TAG=</strong> usando lo spazio indica la selezione del secondo oggetto indicato che sia discendente dal primo.</li>
+        <li><strong>TAG>TAG=</strong> usando il maggiore indica di voler selezionare il secongo oggetto indicato che sia direttamente figlio del primo.</li>
+        <li><strong>TAG:before e TAG:after=</strong>permette di inserire del contenuto come primo oggetto o come ultimo oggetto negli oggetti indicati. </li>
+        <li><strong>TAG[type="type"]=</strong>permette di selezionare un determinato oggetto che sia in possesso di un determinato attributo. </li>
+        <li><strong>TAG:hover=</strong>permette di determinare il comportamento di un oggetto quando viene al contatto con il mouse nel layout <button type="button" name="button">hover</button>
+        <li><strong>TAG:visited=</strong>permette di determinare il comportamento dopo che il mouse ha applicato il click sul oggetto <button type="subim" name="button">visited</button>
+        <li><strong>TAG:frist-cild o TAG:last-cild=</strong>permettono di selezionare il primo oppure l'ultimo figlio di un oggetto </li>
+        <li><strong>TAG+=</strong> indica i TAG immediatamente successivi a quello indicato.</li>
+      </ul>
+      <p>dopo i selettori le indicazioni devono essere inserite tra parentesi graffe {} i comandi sono divisi dalle funzioni dai 2 punti (:), per chiudere un comando serve il punto e virgola che funziona anche da divisorio tra un comando e un alrtro(;)</p>
+    </div>
+  </section>
+  <section id="text" >
+    <div class="">
+      <p>tutto cio che è elemnto puo essere considerato testo, anche le immagini e iltesto puo essere gestito in css.</p>
+      <ul>
+        <li>text-alin:center; <div class="exo1 center">testo</div> </li>
+        <li>text-align: left;<div class="exo1 left">testo</div></li>
+        <li>text-aling: right; <div class="exo1 right">testo</div> </li>
+      </ul>
+      <p>il testo puo avere anche colore, basta usare il comando color: nel css e indicare il colore in inglese<span id="color1" >(color:red;)</span><span id="color2" >(color:blue;)</span>.</p>
+      <p>per la grandezza del testo bisgona usare invece il comando font-size: seguito dalla grandezza desiderata <span id="font" >(font-size:30px;)</span> </p>
+      <p>mentre per il formato bisogna usare il comando font-famly: ma prima bisogna reperire il family che ci interessa da <a href="https://fonts.google.com/">https://fonts.google.com/</a></p>
+    </div>
+  </section>
+  <section id="display" >
+    <div >
+      <h2>display</h2>
+      <p>molti oggetti non possono essere affiancati, mentre altri non possono avere delle dimenzioni specifiche, la funzione display vuole cambiare questi comportamenti di defoult la dove necessario.</p>
+      <h4>comportamenti di defoult</h4>
+      <ul>
+        <li><strong>inline</strong> sono gli oggetti che di defoult possono essere affiancati tra loro, ma questi non possono ottenere delle dimenzioni stabilite. <br>
+        <div class="pagina">
+          <div class="esempio1 inline">a</div>
+          <div class="esempio2 inline">b</div>
+          <div class="esempio3 inline">c</div>
+        </div><p>in questo esempio il background copre solo lo spazio necessario perche gli elementi inline non hanno dimenzioni ma prendono lo spazio necessario agli elementi interni al oggetto.</p> </li>
+        <li><strong>block</strong> sono gli oggetti che possiedono lo spazzio di tutta la riga per cui non possono essere affiancati l'un altro, possono avere dimenzioni però specifiche.<br>
+          <div class="pagina">
+            <div class="esempio1 block"></div>
+            <div class="esempio2 block"></div>
+            <div class="esempio3 block"></div>
+          </div>
+        </li>
+        <li><strong>inline-block</strong> sono oggetti che possono avere dimenzioni e possono essere affiancati tra loro.<br>
+          <div class="pagina">
+            <div class="esempio1 inbl"></div>
+            <div class="esempio2 inbl"></div>
+            <div class="esempio3 inbl"></div>
+          </div>
+        </li>
+      </ul>
+      <p>per cambiare questi comportamenti di defoult bisogna usare il selettore e tra le parentesi indicare la regola <strong>display:</strong> seguito dal comportamento che ci serve <strong>inline, block, inline-block oppure none</strong> . <!-- il comportamento "none"attualmente non lo conosco --></p>
+    </div>
+  </section>
+  <section id="dimenzioni" >
+    <div>
+      <h3>dimenzioni</h3>
+      <p>stabilire una dimenzione ad un oggetto ha funzioni esclusive del layout non visibili in progettazione ma letti esclusivamente dalla macchina ma se privo di colore sara visibile soltanto con l'ispettor. </p>
+      <div class="pagina">
+         <span>esempio</span>
+       </div>
+      <p>per impostare delle dimenzioni è sufficiente usa re 2 comandi: <ul>
+        <li> <strong>whidth:=</strong> per impostare la larghezza del oggetto</li>
+        <li> <strong>height:=</strong> per impostare l'altezza del oggetto</li>
+        </ul> </p>
+      <p>le unita di misura usate per impostare le dimenzioni sono diverse e si possono usare : <ul>
+        <li> <strong>px =</strong> è sufficiente impostare la grandezza desiderata esprimendola in pixel (whidth: 60px;)<br> <div class="pagina"></div> </li>
+        <li> <strong>% =</strong> usando le percentuali si ottiene un oggetto con magior proprietà responsive, le percentuali indicano sempre la percentuale di grandezza del padre (whidth:30%; height:30% figlio del esempio precedente )<br>  <div class="pagina"><div class="percentuale"></div></div> </li>
+        <li> <strong>vh e vw =</strong>sono unita di misura rapportate alle dimenzioni dello schermo del dispositivo usato (whidth:10 wh; height:10vw; )<br><div class="pagina2"></div> </li>
+      </ul> </p>
+    </div>
+  </section>
+  <section id="pad-mar-bor" >
+    <div class="">
+      <div>
+        <div class="illustrazione">
+         <div class="illustrazione margin">margin
+           <div class="illustrazione border">border
+             <div class="illustrazione padding">padding
+               <div class="illustrazione elemnt">elemnt</div>
+             </div>
+           </div>
+         </div>
+        </div>
+      </div>
+      <p>questi sono gli elementi di dimenzione degli oggetti, quando noi andiamo a dare una dimenzione ad un oggetto ci riferiamo al element tutto il resto non sarà visibile ma è presente.<br>
+        <div class="pagina">
+          <div class="esempio1 inbl"></div>
+          <div class="esempio2 inbl"></div>
+          <div class="esempio3 inbl"></div>
+        </div>
+      </p>
+      <h3>MARGIN</h3>
+      <p>il margin è il margine di distanza tra un oggetto e l'altro allinfuori del bordo stabilito.<br>il margine di defoultviene calcolato dalla macchina, mentre puo essere anche stabilito manualmente con il comando e quale margine vogliamo affrontare (<strong>margin-top:</strong>) <br> nel comando possiamo stabilire le dimenzioni con tutte le unita di misura. <br> è inoltre possibile stabilire tutti e 4 i margini esprimendo un unico valore (<strong>margin:10px</strong>) oppure esprimendoli tutti e 4 nel seguente ordine top,left,left,right (<strong>margin:5px 5px 5px 5px;</strong> ) <br>si possono usare anche valori negativi o azzerarlo </p>
+      <div class="pagina">
+        <div class="esempio1 inbl"></div>
+        <div class="esempio2 inbl"></div>
+        <div class="esempio3 inbl"></div>
+      </div>impostando il margine di 5px
+      <div class="pagina">
+        <div class="esempio1 inbl marg"></div>
+        <div class="esempio2 inbl marg"></div>
+        <div class="esempio3 inbl marg"></div>
+      </div>
+    </div>
+    <h3>BORDER</h3>
+    <p>il bordo è un valore di defolut 0. <br>
+    il suo comando è border dove poi bisogna stabilirne la grandezza lo stile e il colore </p>
+    <ul>
+      stili:
+      <li><span class="exobord dotted"> border-style:dotted </span> </li>
+      <li><span class="exobord dashed">border-style: dashed</span> </li>
+      <li><span class="exobord solid"> border-style: solid </span> </li>
+      <li><span class="exobord double">border-style: double</span> </li>
+      <li><span class="exobord groove"> border-style: groove </span> </li>
+      <li><span class="exobord ridge">border-style: ridge </span> </li>
+      <li><span class="exobord inset">border-style: inset</span> </li>
+      <li><span class="exobord outset"> border-style: outset </span> </li>
+      <li><span class="exobord none">border-style: none</span> </li>
+      <li><span class="exobord hidden"> border-style: hidden </span> </li>
+    </ul>
+    <br><br>
+    <h3>padding</h3>
+    <p>il padding è lo spazzio tra il contenuto e il bordo e si puo decidere la dimenzione che non puo essere in negativo.</p>
+      <p>senza impostare padding</p>
+      <div class="exopad1">
+          <p>testo</p>
+      </div>
+      <p>padding-top: 5px; padding-left:1px; padding-bottom:15px; padding-right:20px</p>
+      <div class="exopad">
+          <p>testo</p>
+      </div>
+  </section>
+  <section id="position" >
+    <div class="">
+      <h1>position</h1>
+      <p>tutti gli oggetti che siano blck o inline-bock possono essere spostati con il comando <strong>position:</strong> dando poi indicazioni sullo spostamento mendiante top-left che indicano lo spostamento dalla posizione attuale. esistono divesi tipi di position</p>
+      <ul>
+        <li> <strong>relative: </strong> permette di spostare un oggetto relativamente al padre.<br> <div class="pagina"><div class="esempio1"></div></div> <div class="inbl"> position: relative;<br>top: 10px;<br>left : 10px <br></div> <div class="pagina"><div class="esempio1 exopos1"></div></div> </li>
+        <li> <strong>absolute: </strong> permette di spostare un oggetto togliendolo dal flusso di dati del layout, questo quidni lo rende anche indipendente dal padre e permette il suo posizionamento anche al esterno di esso.<br>
+          <div class="pagina"><div class="esempio1"></div><div class="esempio2"></div></div> <div class="inbl"> position: absolute (quadrato nero);<br>top: 3687px;<br>left : 400px <br></div> <div class="pagina"><div class="esempio1 exopos2"></div><div class="esempio2"></div></div>
+          <div class="inbl">il quadratino nero èra andado a inizio pagina per questo il top e il left sono cosi alti.</div>
+        </li>
+        <li> <strong>fixed:</strong> gli oggetti fixed sono gli oggetti fissi che non subiscono gli effetti di scrol della pagina. (il quadratino nero in alto a destra che ti segue ovunque.)</li>
+              <div class="fiz">fixed</div>
+      </ul>
+    </div>
+  </section>
+  <section id="box-sizing" >
+    <div class="">
+      <h1>box-sixing</h1>
+      <p>il box-sizing permette di stabilire l'intera dimenzione di un ogetto, poiché di defoult il paddin,border e margin si aggiungono alla grandezza stabilita, invece tramite questo comando si può stabilire che questi elementi siano inclusi nella grandezza del ogetto e non più aggiunti come elementi esterni.</p>
+      <ul>
+        <li> <strong>border-box = </strong>permette di includere nella grandezza del oggetto il bordo</li>
+        <li> <strong>content-box =</strong> permette.....</li>
+      </ul>
+    </div>
+  </section>
+  <section id="float" >
+    
+  </section>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+button:hover {
+  color:red;
+}
+.quadratino{
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: black;
+}
+.pagina {
+  display: inline-block;
+  background: yellow;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+.exo1{
+  height: 2vw;
+  width: 50vh;
+  background: lightblue;
+}
+#color1{
+  color: red;
+}
+#color2 {
+  color:blue;
+}
+#font {
+  font-size: 30px;
+}
+.center {
+  text-align: center;
+}
+.left{
+  text-align:
+}
+.right{
+  text-align: right;
+}
+.percentuale {
+  background: blue;
+  width: 30%;
+  height: 30%;
+}
+.pagina2 {
+  background: yellow;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+.esempio1 {
+  width: 10%;
+  height: 10%;
+  background: black;
+}
+.esempio2 {
+  width: 10%;
+  height: 10%;
+  background: red;
+}
+.esempio3 {
+  width: 10%;
+  height: 10%;
+  background: blue;
+}
+.inline {
+  display: inline;
+}
+.block {
+  display: block;
+}
+.inbl {
+  display: inline-block;
+}
+.illustrazione {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.margin {
+  width: 600px;
+  height: 100px;
+  background: orange;
+}
+.border {
+  width:70%;
+  height: 70%;
+  background: black;
+  color: white;
+}
+.padding {
+  width:70%;
+  height: 70%;
+  background: gray;
+  color: black;
+}
+.elemnt {
+  width:40%;
+  height: 40%;
+  background: white;
+}
+.marg {
+  margin:5px;
+}
+.exobord{
+  margin-top:10px;
+  display: block;
+}
+ .dotted{
+   margin-top: 0;
+   border-style: dotted;
+ }
+ .dashed{
+   border-style: dashed;
+ }
+ .solid{
+   border-style: solid;
+ }
+ .groove{
+   border-style: groove;
+ }
+.double{
+  border-style: double;
+}
+.ridge {
+  border-style: ridge;
+}
+.inset{
+  border-style:inset ;
+}
+.outset{
+  border-style: outset;
+}
+.none{
+  border-style: none;
+}
+.hidden{
+ border-style: hidden;
+}
+.exopad {
+  display:inline-block;
+  border-style: solid;
+  padding-top: 5px;
+  padding-left: 1px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+}
+.exopad1 {
+  display: inline-block;
+  border-style: solid;
+}
+.exopos1 {
+  position: relative;
+  top: 10px;
+  left : 10px;
+}
+.exopos2 {
+  position: absolute;
+  top: 3687px;
+  left: 400px;
+  width: 5px;
+  height: 5px;
+}
+.fiz{
+  position: fixed;
+  top: 1%;
+  left: 96%;
+  width: 40px;
+  height: 40px;
+  background: black;
+  color: white;
+  font-size: 18px;
+}
